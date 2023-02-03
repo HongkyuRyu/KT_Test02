@@ -23,7 +23,20 @@ def solution(lottos, win_nums):
             answer.append(rank[i][0])
     return answer
 
+# test case 1
 lottos = [44, 1, 0, 0, 31, 25]
 win_nums = [31, 10, 45, 1, 6, 19]
 answer = solution(lottos, win_nums)
 print(answer) # [3, 5] 출력됨.
+
+# test case 2
+lottos = [0, 0, 0, 0, 0, 0]
+win_nums = [38, 19, 20, 40, 15, 25]
+answer = solution(lottos, win_nums)
+print(answer) # [1, 6] 출력됨.
+
+# test case 3
+lottos = [45, 4, 35, 20, 3, 9]
+win_nums = [20, 9, 3, 45, 4, 35]
+answer = solution(lottos, win_nums)
+print(answer) # [1, 1] 출력됨.
