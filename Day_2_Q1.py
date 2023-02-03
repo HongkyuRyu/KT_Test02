@@ -3,10 +3,12 @@
 def solution(lottos, win_nums):
     answer = []
     rank = [(0,0),(1,6), (2,5), (3,4), (4,3), (5,2), (6,1), (6,0)]
+    # 중복되는 값 미리 제거
     set1 = set(lottos)
     set2 = set(win_nums)
     same_number = len(set1 & set2)
     
+    # 알아볼 수 없는 번호의 갯수: zero_cnt
     zero_cnt = 0
     for i in lottos:
         if i == 0:
